@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+group 'com.galdovich'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes("Implementation-Title": "GradleTest",
+                "Implementation-Version": 1.0)
+    }
+}
+
+dependencies {
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
