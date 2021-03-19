@@ -1,0 +1,5 @@
+rootProject.name = 'multi-projectTask'
+
+include 'core'
+include 'api'
+
