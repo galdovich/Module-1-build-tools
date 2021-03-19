@@ -2,3 +2,5 @@
 Module1.iml
 utilTask/build/*
 utilTask/.gradle/*
+multi-projectTask/build/*
+multi-projectTask/.gradle/*
